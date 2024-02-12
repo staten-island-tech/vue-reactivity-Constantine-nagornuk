@@ -2,5 +2,5 @@
 
 
 <template>
-  <p> SUP DUDE!</p>
+  <p> </p>
 </template>
