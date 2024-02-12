@@ -1,16 +1,15 @@
 
 <template>
- 
-<div>
-  <h2>Multi Checkbox</h2>
-  <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
-  <label for="jack">Jack</label>
-  <input type="checkbox" id="john" value="John" v-model="checkedNames">
-  <label for="john">John</label>
-  <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
-  <label for="mike">Mike</label>
-  <p>Checked names: <pre>{{ checkedNames }}</pre></p>
+ <div id="top" class="middle">
 
+  <p> You have X amonut of dollars you gambler</p>
+ </div>
+<div id="middle" class="middle">
+ 
+  <p id="Q1">One of the fundamental principles of casinos is that they are designed to have a mathematical advantage over players. This is known as the “house edge,” which ensures that the casino will statistically profit in the long run.</p>
+  <button @click = "answer.push('testwork')"> True </button> <button> False</button>
+
+  <p> answer is {{ answer }}</p>
 
 </div>
 
@@ -22,13 +21,18 @@
 
 
 <script setup>
-
-
+import { ref } from 'vue'
+const money = ref(0)
+const answer = ref([])
 </script>
 
 
 
 <style scoped>
+
+.top{
+  color: blue;
+}
 
 </style>
 
