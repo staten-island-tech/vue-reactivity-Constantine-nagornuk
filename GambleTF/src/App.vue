@@ -7,8 +7,10 @@
 <div id="middle" class="middle">
  
   <p id="Q1"> {{ A }}</p>
-  <button @click = "answer = true; "> True </button>       <button @click = "answer = false"> False</button>
-
+  <button class="Button1" @click = "answer = true; listofanswer.pop(); listofanswer.push(answer);  "> True </button>  
+  <button class="Button2" @click = "answer = false; listofanswer.pop(); listofanswer.push(answer);"> False</button>
+  <br>
+  <button class="Sumbit" @click=" console.log(listofanswer);      ">Submit</button>
   <p> answer is {{ answer }}</p>
    
 </div>
@@ -17,24 +19,21 @@
 
 </template>
 
+<!-- diable buttons after sumbit is clicked
+finsish making base funtion of true and false and get it wokring
 
+finsihs writing this list on what to do and how
+
+-->
 
 
 <script setup>
 import { ref } from 'vue'
 let money = ref(0)
 let answer = ref(null)
+const listofanswer = []
 
 
-
-
-if (answer == true) {
-  console.log('you got it right!')
-}
-else{
-
-  console.log("what")
-}
 
 
 
@@ -54,6 +53,14 @@ const A = 'One of the fundamental principles of casinos is that they are designe
   color: rgb(0, 252, 34);
   
 }
+
+.Button1:active{
+  background-color: hsl(108, 85%, 48%);
+}
+.Button2:active{
+  background-color: rgb(255, 2, 2);
+}
+
 
 </style>
 
