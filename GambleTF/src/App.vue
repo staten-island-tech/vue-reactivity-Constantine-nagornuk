@@ -31,7 +31,7 @@ finsihs writing this list on what to do and how
 import { ref } from 'vue'
 let money = ref(0)
 let answer = ref(null)
-const listofanswer = []
+const listofanswer = [];
 
 
 
