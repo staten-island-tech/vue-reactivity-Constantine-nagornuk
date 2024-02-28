@@ -70,7 +70,7 @@
   
   function handleAddToCart(item) {
     cartItems.value.push(item);
-    // Optionally, remove the item from ITEMS if it should no longer be available for adding again
+   
   }
   
   function handleRemoveFromCart(item) {
@@ -78,7 +78,7 @@
     if (index > -1) {
       cartItems.value.splice(index, 1);
     }
-    // Optionally, add the item back to ITEMS if it should be available for adding again
+   
   }
   </script>
 
