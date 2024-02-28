@@ -33,11 +33,11 @@
   
   
   <style scoped>
-  /* Reuse styles from Items.vue, adapt as necessary for the cart context */
+ 
   .STUFF .cart-item {
     list-style-type: none;
     width: 150px;
-    height: auto; /* Changed to auto to accommodate the Remove button */
+    height: auto; 
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -52,7 +52,6 @@
     margin-right: 10px; 
   }
   
-  /* Adapt the container if needed */
   #cart-items {
     display: flex;
     flex-wrap: wrap;
@@ -62,12 +61,12 @@
   }
   
   button {
-    margin-top: 10px; /* Add some space above the Remove button */
+    margin-top: 10px; 
   }
 
 
   .sidebar {
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh; 
     background-color: #f0f0f0; 
     flex: 0 0 200px; 
     height: 100vh; 
@@ -84,13 +83,13 @@
 }
 
 .sidebar {
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh; 
   background-color: #f0f0f0;
   flex: 0 0 200px;
   padding: 20px;
   border: 1px solid #ccc;
   margin-left: 20px;
-  overflow-y: auto; /* Enables vertical scrolling if content overflows */
+  overflow-y: auto; 
 }
   </style>
   
