@@ -69,10 +69,13 @@
   const cartItems = ref([]);
   
   function handleAddToCart(item) {
-    cartItems.value.push(item);
-    const jkl = item.stock - 1
-    console.log(item.stock)
-    console.log(jkl)
+    item.stock -= 1
+    if(item.stock <= -1 ){
+      item.stock = 0
+      console.log('Out of stock')
+    }
+    else if (item.stock >= 0){ cartItems.value.push(item);}
+    
   } 
   
   function handleRemoveFromCart(item) {
