@@ -82,7 +82,9 @@
     const index = cartItems.value.findIndex((cartItem) => cartItem.id === item.id);
     if (index > -1) {
       cartItems.value.splice(index, 1);
+      item.stock += 1
     }
+   
    
   }
   </script>
